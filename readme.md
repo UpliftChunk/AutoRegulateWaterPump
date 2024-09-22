@@ -1,4 +1,33 @@
-# Setup ESP32
+# Automatic Regulation of Water Based on Soil Moisture and Temperature
+
+## Overview
+This project aims to optimize water usage in agricultural fields using machine learning and IoT technologies. The system, built with an ESP32 microcontroller, soil moisture, and temperature sensors, automates water regulation based on real-time data.
+
+## System Components
+- **ESP32 WROOM Microcontroller**: Connects to soil moisture and temperature sensors.
+- **Capacitive Soil Moisture Sensor**: Monitors soil moisture levels.
+- **Temperature Sensor (DHT11/DHT22)**: Measures ambient temperature.
+- **MOSFET (IRFZ44 N channel) & Relay**: Control irrigation hardware.
+
+## Features
+Automated water regulation using machine learning.
+- **Data Collection**: The ESP32 collects data from the sensors and sends it to a server.
+- **Machine Learning Models**:
+  - Linear Regression: Determines the amount of water needed.
+  - Multi-Linear Regression: Predicts when soil moisture will drop below a threshold.
+
+Real-time data processing.
+- Water Regulation: Based on predictions, the ESP32 activates irrigation hardware.
+
+## Usage
+1. Install the sensors and ESP32 as per the circuit design.
+2. Connect the ESP32 to the Wi-Fi network.
+
+![Circuit Image](https://postimg.cc/K1F5LXGD)
+
+(https://postimg.cc/K1F5LXGD)
+
+# Setup proccess in ESP32 micro controller 
 
 build and upload firmware/sketch to an ESP32 using PlatformIO.
 
@@ -31,7 +60,7 @@ if you this does not work, manually specify the port at which your esp32 is conn
 `# Replace with your port`
 more info to find your com: https://www.taltech.com/support/identify-com-port/
 
-### 4. 5. Monitor Serial Output
+### 5. Monitor Serial Output
 ```
 platformio device monitor
 ```
