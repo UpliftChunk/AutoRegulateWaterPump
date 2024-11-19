@@ -23,7 +23,6 @@ Real-time data processing.
 1. Install the sensors and ESP32 as per the circuit design.
 2. Connect the ESP32 to the Wi-Fi network.
 
-/*[![Circuit.png](https://i.postimg.cc/pL5cwx34/Circuit.png)](https://postimg.cc/K1F5LXGD)*/
 [![Screenshot-2024-1119-083138.jpg](https://i.postimg.cc/kXKkGJQq/Screenshot-2024-1119-083138.jpg)](https://postimg.cc/3drLbHfc)
 
 # Setup proccess in ESP32 micro controller 
